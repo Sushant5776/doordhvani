@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header className='flex justify-between items-center pt-10'>
 			<h1 className='text-3xl font-bold ml-16 text-transparent bg-gradient-to-r from-secondary to-tertiary bg-clip-text'>
-				Doordhvani
+				<Link href={'/'}>Doordhvani</Link>
 			</h1>
 			<div className='flex items-center mr-16 space-x-4'>
 				<Link

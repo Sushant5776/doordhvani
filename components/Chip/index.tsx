@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 type Props = {
 	text: string
 	color: string
@@ -5,11 +7,12 @@ type Props = {
 
 const Chip = ({ text, color }: Props) => {
 	return (
-		<div
+		<Link
+			href={`/explore/${text.toLowerCase()}`}
 			style={{ backgroundColor: color }}
 			className={`px-4 py-2 rounded-full text-base font-medium text-white w-fit`}>
 			{text}
-		</div>
+		</Link>
 	)
 }
 

@@ -29,7 +29,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<h2 className='text-2xl font-semibold text-center text-secondary mb-5'>
+			<h2 className='text-2xl font-semibold text-center underline text-secondary mb-5'>
 				People are Loving These...{' '}
 				<span className='text-red-500'>&#x2665;</span>
 			</h2>
