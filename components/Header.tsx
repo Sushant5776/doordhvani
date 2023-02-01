@@ -4,9 +4,13 @@ import ButtonLink from '@/components/ButtonLink'
 const Header = () => {
 	return (
 		<header className='flex justify-between items-center pt-10'>
-			<h1 className='text-3xl font-bold ml-16'>Doordhvani</h1>
+			<h1 className='text-3xl font-bold ml-16 text-transparent bg-gradient-to-r from-secondary to-tertiary bg-clip-text'>
+				Doordhvani
+			</h1>
 			<div className='flex items-center mr-16 space-x-4'>
-				<Link className='text-secondary underline' href={'/explore'}>
+				<Link
+					className='text-secondary underline font-medium'
+					href={'/explore'}>
 					Explore
 				</Link>
 

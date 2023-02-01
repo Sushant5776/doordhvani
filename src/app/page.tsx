@@ -1,6 +1,13 @@
+import Card from '@/components/Card'
 import Header from '@/components/Header'
 import Image from 'next/image'
 import AdvertisementImage from 'public/advertisement.jpg'
+import AppleImage from 'public/apple.png'
+import AppleImage2 from 'public/apple2.png'
+import SamsungImage from 'public/samsung.png'
+import HTCImage from 'public/htc.jpg'
+import Chip from '@/components/Chip'
+import Footer from '@/components/Footer'
 
 export default function Home() {
 	return (
@@ -22,10 +29,33 @@ export default function Home() {
 				</div>
 			</div>
 
-			<h2 className='text-2xl font-semibold text-center text-secondary'>
+			<h2 className='text-2xl font-semibold text-center text-secondary mb-5'>
 				People are Loving These...{' '}
 				<span className='text-red-500'>&#x2665;</span>
 			</h2>
+
+			<div className='flex mx-16 justify-between mb-20'>
+				<Card imgUrl={AppleImage} />
+				<Card imgUrl={AppleImage2} />
+				<Card imgUrl={SamsungImage} />
+				<Card imgUrl={HTCImage} />
+			</div>
+
+			<h2 className='text-2xl font-semibold text-center text-secondary mb-5'>
+				Categories
+			</h2>
+			<div className='w-max mx-auto mb-8'>
+				<div className='flex space-x-4'>
+					<Chip text='Samsung' color='#1428A0' />
+					<Chip text='Oppo' color='#1EA366' />
+					<Chip text='Vivo' color='#2137FC' />
+					<Chip text='Xiaomi' color='#FF6900' />
+					<Chip text='Apple' color='#000000' />
+					<Chip text='OnePlus' color='#F5010C' />
+				</div>
+			</div>
+
+			<Footer />
 		</main>
 	)
 }
