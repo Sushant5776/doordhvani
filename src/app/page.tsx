@@ -6,8 +6,8 @@ import AppleImage from 'public/apple.png'
 import AppleImage2 from 'public/apple2.png'
 import SamsungImage from 'public/samsung.png'
 import HTCImage from 'public/htc.jpg'
-import Chip from '@/components/Chip'
 import Footer from '@/components/Footer'
+import Categories from '@/components/Categories'
 
 export default function Home() {
 	return (
@@ -41,19 +41,7 @@ export default function Home() {
 				<Card imgUrl={HTCImage} />
 			</div>
 
-			<h2 className='text-2xl font-semibold text-center text-secondary mb-5'>
-				Categories
-			</h2>
-			<div className='w-max mx-auto mb-8'>
-				<div className='flex space-x-4'>
-					<Chip text='Samsung' color='#1428A0' />
-					<Chip text='Oppo' color='#1EA366' />
-					<Chip text='Vivo' color='#2137FC' />
-					<Chip text='Xiaomi' color='#FF6900' />
-					<Chip text='Apple' color='#000000' />
-					<Chip text='OnePlus' color='#F5010C' />
-				</div>
-			</div>
+			<Categories />
 
 			<Footer />
 		</main>

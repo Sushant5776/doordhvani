@@ -1,7 +1,15 @@
+import Categories from '@/components/Categories'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+
 const ExplorePage = () => {
 	return (
 		<main>
-			<h1 className='text-3xl'>Welcome!</h1>
+			<Header />
+			<Categories />
+			{/* cards */}
+			<article></article>
+			<Footer />
 		</main>
 	)
 }
